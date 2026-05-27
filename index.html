@@ -121,3 +121,68 @@
     <li><a href="#fleet">The Fleet</a></li>
     <li><a href="#scheduler">Book Session</a></li>
   </ul>
+  <button class="nav-btn" onclick="document.getElementById('scheduler').scrollIntoView({behavior:'smooth'})">Reserve Drive</button>
+</nav>
+
+<div class="hero">
+  <div class="hero-content">
+    <div class="hero-tag">Track & Street Validated</div>
+    <h1>Don't Just Read.<br>Experience <em>Performance.</em></h1>
+    <p class="hero-sub">Select your vehicle, pick your track route, and synchronize your session directly with our performance pilots. No stress, pure torque.</p>
+    <button class="nav-btn" style="padding: 1.1rem 2.5rem;" onclick="document.getElementById('scheduler').scrollIntoView({behavior:'smooth'})">Launch Session Builder</button>
+  </div>
+</div>
+
+<div class="fleet" id="fleet">
+  <div class="wrap">
+    <h2 class="section-title">Available <span>Platforms</span></h2>
+    <div class="fleet-grid">
+      <div class="vehicle-card" onclick="document.getElementById('scheduler').scrollIntoView({behavior:'smooth'})">
+        <span class="vehicle-class">Hyper-EV</span>
+        <h3 class="vehicle-name">Apex Concept E1</h3>
+        <div class="vehicle-specs">
+          <div class="spec-item"><strong>1,020hp</strong> Output</div>
+          <div class="spec-item"><strong>1.9s</strong> 0-60 MPH</div>
+        </div>
+      </div>
+      <div class="vehicle-card" onclick="document.getElementById('scheduler').scrollIntoView({behavior:'smooth'})">
+        <span class="vehicle-class">Track Variant</span>
+        <h3 class="vehicle-name">Apex GT3-R</h3>
+        <div class="vehicle-specs">
+          <div class="spec-item"><strong>520hp</strong> N/A Flat-6</div>
+          <div class="spec-item"><strong>9,000</strong> RPM Redline</div>
+        </div>
+      </div>
+      <div class="vehicle-card" onclick="document.getElementById('scheduler').scrollIntoView({behavior:'smooth'})">
+        <span class="vehicle-class">All-Terrain Combat</span>
+        <h3 class="vehicle-name">Apex Overland X</h3>
+        <div class="vehicle-specs">
+          <div class="spec-item"><strong>35"</strong> All-Terrain</div>
+          <div class="spec-item"><strong>18"</strong> Travel Susp.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="booking-container" id="scheduler">
+  <div class="wrap">
+    <div class="booking-header">
+      <div style="color: var(--electric-blue); font-family: 'Orbitron', sans-serif; font-size: 0.8rem; letter-spacing: 0.2em; margin-bottom: 1rem; text-transform: uppercase;">Real-Time Fleet Availability</div>
+      <h2>Configure Your <span>Experience</span></h2>
+    </div>
+
+    <<gomeddo-frontend-builder
+       apiKey="6b944da2-cac8-46b4-b358-4e641e11de47"
+       developerName="Test_Drive"
+       environment="PRODUCTION"
+       backgroundColor="#16072D"
+       primaryColor="#9BCFFF"
+    >
+    </gomeddo-frontend-builder>
+    <script type="module" src="https://frontend.gomeddo.com/gomeddo-frontend-builder.mjs"></script>
+  </div>
+</div>
+
+</body>
+</html>
